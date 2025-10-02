@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Boss: Elegancia y Estilo de Vanguardia</title>
+    <style>
+        /* 🚨 ESTILO: NEGRO Y ROJO (DARK/LUXURY FLOW) - AJUSTES DE PROFUNDIDAD Y ANCHO 🚨 */
+
+        /* Definición de Paleta */
+        :root {
+            --color-negro-profundo: #111111;
+            --color-gris-oscuro: #222222;
+            --color-rojo-principal: #FF0000;
+            --color-rojo-oscuro: #CC0000;
+            --color-texto-claro: #E0E0E0;
+            --color-texto-acento: #FF5555;
+        }
+
+        /* Tipografía y Colores Base */
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: var(--color-negro-profundo);
+            color: var(--color-texto-claro);
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        /* Estilos de Tabla Principal */
+        .gta-container {
+            width: 80%; 
+            margin: 0 auto;
+            border: 8px solid var(--color-rojo-principal); 
+            background-color: var(--color-gris-oscuro);
+            border-collapse: collapse;
+            box-shadow: 0 5px 25px rgba(255, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Centrar la tabla en la página */
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo para todas las celdas */
+        .gta-container td {
+            border: 2px solid var(--color-rojo-oscuro);
+            padding: 10px;
+        }
+
+        /* Encabezado */
+        .gta-header td {
+            background-color: #000000;
+            color: var(--color-rojo-principal);
+            text-align: center;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .gta-header b {
+            font-size: 1.1em;
+            color: var(--color-texto-claro);
+        }
+
+        /* Menú Lateral */
+        .gta-menu {
+            background-color: var(--color-gris-oscuro);
+            text-align: center; 
+        }
+
+        .gta-menu h3 {
+            color: var(--color-rojo-principal);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--color-rojo-principal);
+            padding-bottom: 5px;
+            margin-top: 0;
+            font-size: 1em;
+        }
+
+        /* Botones */
+        .gta-menu a.gta-button {
+            display: block;
+            width: 80%;
+            margin: 3px auto;
+            padding: 4px 2px;
+            background-color: var(--color-rojo-principal);
+            color: var(--color-negro-profundo);
+            border: 3px solid var(--color-texto-claro);
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            font-size: 0.75em;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+            box-shadow: 1px 1px 0px var(--color-rojo-oscuro);
+        }
+
+        .gta-menu a.gta-button:hover {
+            background-color: var(--color-negro-profundo);
+            color: var(--color-rojo-principal);
+            border-color: var(--color-rojo-principal);
+        }
+
+        /* Contenido Principal */
+        .gta-content h2 {
+            color: var(--color-rojo-principal);
+            text-align: center;
+            font-size: 1.5em;
+            text-shadow: 2px 2px var(--color-negro-profundo);
+            margin-bottom: 10px;
+        }
+        
+        /* Casillas 50/50 */
+        .split-content td {
+            width: 50%;
+            vertical-align: top;
+            border: 2px solid var(--color-rojo-principal);
+            padding: 15px;
+            background-color: var(--color-gris-oscuro);
+        }
+
+        /* Sección de Medios */
+        .gta-media-grid {
+            text-align: center;
+            background-color: #0A0A0A;
+            border-collapse: collapse;
+        }
+
+        .gta-media-grid span {
+            display: block;
+            margin-top: 5px;
+            color: var(--color-texto-acento);
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .gta-media-grid img, .gta-media-grid iframe {
+            width: 200px; 
+            height: 120px;
+            border: 2px solid var(--color-rojo-principal);
+            object-fit: cover; 
+        }
+
+        .half-col-content-wrapper {
+            background-color: #000000;
+            border-top: 2px solid var(--color-rojo-oscuro); 
+            padding: 0; 
+        }
+        
+        .half-col-content-inner td {
+            width: 50%; 
+            background-color: #000000; 
+            color: #cccccc;
+            font-weight: normal;
+            font-size: 0.8em;
+            padding: 10px;
+            vertical-align: top;
+            border: 1px solid var(--color-rojo-principal); 
+            border-top: none; 
+            border-bottom: none; 
+        }
+
+        .half-col-content-inner h3 {
+            color: var(--color-rojo-principal);
+        }
+        
+        .half-col-content-inner td:first-child {
+            border-left: none; 
+        }
+        .half-col-content-inner td:last-child {
+            border-right: none; 
+        }
+
+        /* Pie */
+        .gta-footer {
+            background-color: #000000;
+            font-size: 0.9em;
+            border-top: 3px solid var(--color-rojo-principal);
+        }
+
+        .gta-footer ul {
+            list-style: none;
+            padding: 0;
+            color: var(--color-rojo-principal);
+            font-weight: bold;
+        }
+
+        .gta-footer p {
+            color: #cccccc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .half-col-content-inner td {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid var(--color-rojo-principal);
+                border-top: 1px solid var(--color-rojo-principal);
+                border-left: none; 
+                border-right: none; 
+            }
+
+            .gta-container {
+                width: 95%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table class="gta-container" cellspacing="0" cellpadding="10" align="center">
+        <tr class="gta-header">
+            <td colspan="1" valign="top"> 
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td><b>HUGO</b><br>RED LABEL</td>
+                        <td><b>BOSS</b><br>BLACK LABEL</td>
+                        <td><b>SASTRERÍA</b><br>EXCLUSIVA</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td width="25%" valign="top" class="gta-menu">
+                            <h3>Líneas de Diseño</h3>
+                            <table width="100%" cellspacing="0" cellpadding="5">
+                                <tr><td><a href="https://www.hugoboss.com/us/men-clothing/" class="gta-button" target="_blank">BOSS Business 👔</a></td></tr>
+                                <tr><td><a href="https://www.hugoboss.com/us/hugo/" class="gta-button" target="_blank">HUGO Casual 🕶</a></td></tr>
+                                <tr><td><a href="https://www.hugoboss.com/us/new-in/" class="gta-button" target="_blank">Colección Primavera 🌸</a></td></tr>
+                                <tr><td><a href="https://www.hugoboss.com/us/boss-campaign/" class="gta-button" target="_blank">Nuevos Lanzamientos ✨</a></td></tr>
+                            </table>
+                        </td>
+
+                        <td width="75%" class="gta-content">
+                            <h2>🔥 LA ESENCIA DE HUGO BOSS 🔥</h2>
+
+                            <table width="100%" cellspacing="0" cellpadding="0" align="center" class="gta-media-grid">
+                                <tr>
+    <td>
+        <iframe src="https://www.youtube.com/embed/Rx9ht9oIjR8" title="Spring/Summer 2024 Global Campaign | BOSS" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <span>Campaña Primavera/Verano 2024</span>
+    </td>
+    <td>
+        <iframe src="https://www.youtube.com/embed/KDKsLqZZWHk" title="All-New BOSS Performance" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <span>BOSS Performance</span>
+    </td>
+    <td>
+        <img src="https://www.reuters.com/resizer/v2/SWFP7SAGKVP3HCXCGG3PHMW5BA.jpg?auth=c0736e213b5bfa624ddc8fd084a64e74dfe769e94dd4e9fc6420bbc9db4c3f1c&width=3500&quality=80"/>
+        <br>
+        <span>Hugo Boss – Imagen de marca</span>
+    </td>
+</tr>
+
+                                
+                                <tr>
+                                    <td colspan="3" class="half-col-content-wrapper">
+                                        <table width="100%" cellspacing="0" cellpadding="0" class="half-col-content-inner">
+                                            <tr>
+                                                <td style="border-right: 1px solid var(--color-rojo-oscuro);">
+                                                    <h3>🏆 Maestría Alemana</h3>
+                                                    <p>La marca se distingue por su inigualable calidad, precisión en el corte y el uso de tejidos premium desde 1924.</p>
+                                                </td>
+                                                <td style="border-left: 1px solid var(--color-rojo-oscuro);">
+                                                    <h3>✨ Iconos de Estilo</h3>
+                                                    <p>Viste a figuras clave en deportes, cine y moda, definiendo el look del hombre y la mujer de éxito global.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="gta-footer">
+            <td colspan="2"> 
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td width="50%">
+                            <ul><li>ADN DE LUJO</li></ul>
+                            <p>El foco en la elegancia, la modernidad y la artesanía impecable es el corazón de cada colección BOSS.</p>
+                        </td>
+                        <td width="50%">
+                            <ul><li>MODA SOSTENIBLE</li></ul>
+                            <p>Compromiso con la responsabilidad social y ambiental, buscando materiales más responsables y procesos éticos.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
